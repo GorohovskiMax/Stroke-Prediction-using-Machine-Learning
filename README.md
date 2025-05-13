@@ -52,6 +52,34 @@ Both models were trained using a pipeline including:
 
 ---
 
+### 📈 Results & Conclusions
+
+After training and evaluating both **Logistic Regression** and **CART (Decision Tree with Gini index)**, we found the following key insights:
+
+| **Metric**              | **Logistic Regression** | **CART (Gini)**         |
+|-------------------------|--------------------------|--------------------------|
+| **Accuracy**            | 0.74                     | 0.73                     |
+| **Stroke Recall (1)**   | 0.80                     | 0.78                     |
+| **Stroke Precision**    | 0.14                     | 0.13                     |
+| **F1-Score (Stroke)**   | 0.23                     | 0.22                     |
+| **ROC-AUC**             | **0.84**                 | 0.75                     |
+
+- **Logistic Regression** achieved higher **ROC-AUC**, making it more reliable for **probability-based classification**.
+- **CART** offered **greater interpretability**, useful in **medical settings** where transparent decision rules are important.
+- Both models emphasized **recall** to minimize false negatives — a critical priority in medical diagnosis.
+
+---
+
+#### 🔍 Stroke Risk Factors & Prevention Suggestions
+
+- **Age**, **hypertension**, and **glucose levels** were strong predictors.
+- Based on model insights, patients are advised to:
+  - Regularly screen for blood pressure and glucose levels.
+  - Make informed lifestyle changes (e.g., smoking cessation, healthy diet).
+  - Raise awareness among older populations and those with chronic conditions.
+
+---
+
 ## 📚 Key Learnings
 
 - Hands-on experience with imputation and preprocessing medical data
